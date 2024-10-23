@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holidays by Country Codes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Holidays by Country Codes</h1>
+        <form id="holidayForm">
+            <label for="country">Country Code:</label>
+            <input type="text" id="country" name="country" placeholder="US" required>
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" placeholder="2023" required>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <table id="holidayTable" class="holiday-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Day</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Holidays will be injected here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Some Interesting Country Codes(Total-266)</h2>
+        <div class="country-list">
+            <!-- India -->
+            <div class="country-item">
+                <img src="pexels-nishantdas-10980106.jpg" alt="India Flag" class="country-logo">
+                <p>India</p>
+            </div>
+            <!-- UK -->
+            <div class="country-item">
+                <img src="uk.png" alt="UK Flag" class="country-logo">
+                <p>United Kingdom</p>
+            </div>
+            <!-- Australia -->
+            <div class="country-item">
+                <img src="aus.png" alt="Australia Flag" class="country-logo">
+                <p>Australia</p>
+            </div>
+            <!-- China -->
+            <div class="country-item">
+                <img src="china.png" alt="China Flag" class="country-logo">
+                <p>China</p>
+            </div>
+            <!-- US -->
+            <div class="country-item">
+                <img src="us.png" alt="US Flag" class="country-logo">
+                <p>United States</p>
+            </div>
+            <!-- Japan -->
+            <div class="country-item">
+                <img src="japan.png" alt="Japan Flag" class="country-logo">
+                <p>Japan</p>
+            </div>
+            <!-- France -->
+            <div class="country-item">
+                <img src="france.png" alt="France Flag" class="country-logo">
+                <p>France</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

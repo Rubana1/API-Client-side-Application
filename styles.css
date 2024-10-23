@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('pexels-jill-wellington-1638660-247972.jpg') no-repeat center center fixed; /* Add your background image */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Vertically centers the label content */
+    margin-right: 0; /* Removes space between label and input */
+}
+
+form input {
+    padding: 5px;
+    height: 30px; /* Adjust height if needed */
+    margin-left: 0; /* Ensures there's no extra margin between input and label */
+}
+
+form #year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form button {
+    background-color: #4CAF50; /* Slightly darker green on hover */
+}
+
+.holiday-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.holiday-table th, .holiday-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.holiday-table th {
+    background-color: #b5afaf;
+    font-weight: bold;
+}
+
+.holiday-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.holiday-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer Section */
+footer {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px 0;
+    margin-top: auto; /* Ensure footer stays at the bottom */
+    text-align: center;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+}
+
+.country-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.country-item {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.country-logo {
+    width: 40px;  /* Further reduced size */
+    height: 40px; /* Ensure height and width are equal to make it a circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the flag fits well inside the circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.country-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Ensure the background image covers the entire page */
+html, body {
+    height: 100%;
+}
